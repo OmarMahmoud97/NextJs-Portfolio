@@ -74,7 +74,7 @@ export default function Animation() {
   }
 
   return (
-    <section className="hero-section">
+    <section>
       <div
         style={{ height: `${imageTarget}px` }}
         className="hero-image-layer"

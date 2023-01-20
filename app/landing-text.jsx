@@ -35,52 +35,68 @@ function LandingText() {
       </div>
       <div className="landing-tools">
         <h3 className="landing-stack-header">Technologies and Skills</h3>
-        <ul className="landing-stack">
-          <div className="landing-stack-section">
-            <div className="landing-stack-group">
+        <ul className="landing-stack w-full justify-center flex-col flex items-center">
+          <div className="landing-stack-section flex items-center w-3/4 justify-evenly">
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
               <Image
-                className="landing-icon"
+                className="landing-icon w-20"
                 src={javascript}
                 alt="stack icon"
               />
               <li className="landing-stack-item">Javascript</li>
             </div>
-            <div className="landing-stack-group">
-              <Image className="landing-icon" src={react} alt="stack icon" />
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
+              <Image
+                className="landing-icon w-20"
+                src={react}
+                alt="stack icon"
+              />
               <li className="landing-stack-item">React JS</li>
             </div>
-            <div className="landing-stack-group">
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
               <Image
-                className="landing-icon landing-icon-small"
+                className="landing-icon w-20"
                 src={node}
                 alt="stack icon"
               />
               <li className="landing-stack-item">NodeJs</li>
             </div>
-            <div className="landing-stack-group">
-              <Image className="landing-icon" src={html} alt="stack icon" />
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
+              <Image
+                className="landing-icon w-20"
+                src={html}
+                alt="stack icon"
+              />
               <li className="landing-stack-item">HTML</li>
             </div>
           </div>
-          <div className="landing-stack-section">
-            <div className="landing-stack-group">
-              <Image className="landing-icon" src={css} alt="stack icon" />
+          <div className="landing-stack-section flex items-center w-3/4 justify-evenly">
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
+              <Image className="landing-icon w-20" src={css} alt="stack icon" />
               <li className="landing-stack-item">CSS</li>
             </div>
-            <div className="landing-stack-group">
-              <Image className="landing-icon" src={blender} alt="stack icon" />
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
+              <Image
+                className="landing-icon w-20"
+                src={blender}
+                alt="stack icon"
+              />
               <li className="landing-stack-item">Blender</li>
             </div>
-            <div className="landing-stack-group">
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
               <Image
-                className="landing-icon landing-icon-small"
+                className="landing-icon w-20"
                 src={figma}
                 alt="stack icon"
               />
               <li className="landing-stack-item">Figma</li>
             </div>
-            <div className="landing-stack-group">
-              <Image className="landing-icon" src={next} alt="stack icon" />
+            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
+              <Image
+                className="landing-icon w-20"
+                src={next}
+                alt="stack icon"
+              />
               <li className="landing-stack-item">
                 Next.js <span className="landing-soon">coming soon</span>
               </li>
