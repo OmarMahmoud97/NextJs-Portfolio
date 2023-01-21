@@ -77,12 +77,12 @@ export default function Animation() {
     <section>
       <div
         style={{ height: `${imageTarget}px` }}
-        className="hero-image-layer"
+        className="hero-image-layer z-0"
       ></div>
       <canvas
         ref={canvasRef}
         id="reticle"
-        className="hero-canvas h-full w-full object-cover fixed top-0"
+        className="hero-canvas h-full w-full object-cover fixed top-0 z-0"
       />
     </section>
   );
