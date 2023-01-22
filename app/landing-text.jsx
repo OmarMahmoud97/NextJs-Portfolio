@@ -96,9 +96,9 @@ function LandingText() {
   }, []);
 
   return (
-    <article className=" top-0 fixed w-full flex items-end flex-col justify-center fixed h-full z-50">
-      <div className="landing-top flex flex-row items-center justify-center w-full relative">
-        <div className="landing-name-title z-10 w-full flex items-end flex-col">
+    <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-50 ">
+      <div className="flex flex-row items-center justify-center w-full absolute">
+        <div className=" z-10 w-full flex items-center flex-col absolute w-1/3">
           <h1
             ref={nameRef}
             className="landing-name text-white z-10 text-5xl w-full"
@@ -112,10 +112,10 @@ function LandingText() {
             Software Engineer
           </h2>
         </div>
-        <div className="landing-job-name pl-8 z-0">
+        <div className="pl-8 z-0 flex align-middle justify-center">
           <h3
             ref={introRef}
-            className="landing-intro text-gray-400 rounded-lg p-4 text-center text-2xl w-full "
+            className="landing-intro text-gray-400 rounded-lg p-4 text-center text-2xl w-2/4 "
           >
             It has been said a picture can paint a thousand words. I believe a
             website, an interactive picture, which can be experienced fully by
@@ -127,102 +127,57 @@ function LandingText() {
             immersive experience possible.
           </h3>
         </div>
-        {/* <div className="landing-name-title w-full z-10 flex items-end flex-col">
-          <h1 className="landing-name text-white text-5xl w-full">
-            Omar Mahmoud
-          </h1>
-          <h2 className="landing-subname text-teal-500 text-3xl w-full font-bold mt-8">
-            Software Engineer
-          </h2>
-        </div> */}
       </div>
       <div ref={toolsRef} className="landing-tools w-full absolute">
-        <h3 className="landing-stack-header mb-8 text-white text-3xl w-full text-center">
+        <h3 className=" mb-8 text-white text-3xl w-full text-center">
           Technologies and Skills
         </h3>
-        <ul className="landing-stack w-full justify-center flex-col flex items-center">
-          <div className="landing-stack-section flex items-center w-3/4 justify-evenly ">
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={javascript}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">
-                Javascript
-              </li>
+        <ul className=" w-full justify-center flex-col flex items-center">
+          <div className=" flex items-center w-3/4 justify-evenly ">
+            <div className=" w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={javascript} alt="stack icon" />
+              <li className=" text-white text-base">Javascript</li>
             </div>
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={react}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">
-                React JS
-              </li>
+            <div className=" w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={react} alt="stack icon" />
+              <li className="text-white text-base">React JS</li>
             </div>
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={node}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">
-                NodeJs
-              </li>
+            <div className=" w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={node} alt="stack icon" />
+              <li className="text-white text-base">NodeJs</li>
             </div>
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={html}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">HTML</li>
+            <div className=" w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={html} alt="stack icon" />
+              <li className="text-white text-base">HTML</li>
             </div>
           </div>
-          <div className="landing-stack-section flex items-center w-3/4 justify-evenly">
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image className="landing-icon w-20" src={css} alt="stack icon" />
-              <li className="landing-stack-item text-white text-base">CSS</li>
+          <div className="flex items-center w-3/4 justify-evenly">
+            <div className="w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={css} alt="stack icon" />
+              <li className="text-white text-base">CSS</li>
             </div>
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={blender}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">
-                Blender
-              </li>
+            <div className="w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={blender} alt="stack icon" />
+              <li className="text-white text-base">Blender</li>
             </div>
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={figma}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">Figma</li>
+            <div className="w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={figma} alt="stack icon" />
+              <li className="text-white text-base">Figma</li>
             </div>
-            <div className="landing-stack-group w-56 flex flex-col items-center justify-between h-full">
-              <Image
-                className="landing-icon w-20"
-                src={next}
-                alt="stack icon"
-              />
-              <li className="landing-stack-item text-white text-base">
-                Next.js{" "}
-                <span className="landing-soon text-base">coming soon</span>
+            <div className="w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={next} alt="stack icon" />
+              <li className="text-white text-base">
+                Next.js <span className="text-base">coming soon</span>
               </li>
             </div>
           </div>
         </ul>
-        <div className="landing-button fixed bottom-0 m-4 flex items-end justify-center cursor-pointer">
+        <div className="fixed bottom-0 m-4 flex items-end justify-center cursor-pointer">
           <a
             type="button"
             onClick="document.getElementById('nav').scrollIntoView();"
           >
-            <Image className="landing-down w-1" src={down} alt="stack icon" />
+            <Image className="w-1" src={down} alt="stack icon" />
           </a>
         </div>
       </div>

@@ -15,21 +15,17 @@ export default function Animation() {
   const [imageTarget, setImageTarget] = useState(3000);
 
   useEffect(() => {
-    // define number of frames in the animation
     const frameCount = 435;
 
-    // function to generate the file path for each frame
     const currentFrame = (index) =>
       `../best-ball/${(index + 1).toString()}.jpg`;
 
-    // load images from the directory and push them to the images array
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
       img.src = currentFrame(i);
       images.push(img);
     }
     setImages(images);
-    // call render function when the first image is loaded
     images[0].onload = render;
 
     gsap.to(ball, {
@@ -37,15 +33,14 @@ export default function Animation() {
       snap: "frame",
       overwrite: "true",
       scrollTrigger: {
-        trigger: "#reticle",
+        trigger: "#canvas",
         anticipatePin: 1,
-        // markers: true,
-        // pin: true,   // pin the trigger element while active
-        start: "top top", // when the top of the trigger hits the top of the viewport
-        end: `${imageTarget}px`, // end after scrolling 500px beyond the start
-        scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+
+        start: "top top",
+        end: `${imageTarget}px`,
+        scrub: 0.5,
       },
-      onUpdate: render, // use animation onUpdate instead of scrollTrigger's onUpdate
+      onUpdate: render,
     });
 
     const heroCanvas = document.querySelector(".hero-canvas");
@@ -64,7 +59,7 @@ export default function Animation() {
   });
 
   function render() {
-    const canvas = document.querySelector("#reticle");
+    const canvas = document.querySelector("#canvas");
     const context = canvas.getContext("2d");
     context.canvas.width = images[0].width;
     context.canvas.height = images[0].height;
@@ -81,7 +76,7 @@ export default function Animation() {
       ></div>
       <canvas
         ref={canvasRef}
-        id="reticle"
+        id="canvas"
         className="hero-canvas h-full w-full object-cover fixed top-0 z-0"
       />
     </section>
