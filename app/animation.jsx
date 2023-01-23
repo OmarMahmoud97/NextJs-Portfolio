@@ -15,7 +15,7 @@ export default function Animation() {
   const [imageTarget, setImageTarget] = useState(3000);
 
   useEffect(() => {
-    const frameCount = 435;
+    const frameCount = 263;
 
     const currentFrame = (index) =>
       `../best-ball/${(index + 1).toString()}.jpg`;
@@ -29,7 +29,7 @@ export default function Animation() {
     images[0].onload = render;
 
     gsap.to(ball, {
-      frame: frameCount - 1,
+      frame: frameCount,
       snap: "frame",
       overwrite: "true",
       scrollTrigger: {

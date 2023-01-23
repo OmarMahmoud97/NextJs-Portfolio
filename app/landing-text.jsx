@@ -166,9 +166,7 @@ function LandingText() {
             </div>
             <div className="w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={next} alt="stack icon" />
-              <li className="text-white text-base">
-                Next.js <span className="text-base">coming soon</span>
-              </li>
+              <li className="text-white text-base">Next.js</li>
             </div>
           </div>
         </ul>
