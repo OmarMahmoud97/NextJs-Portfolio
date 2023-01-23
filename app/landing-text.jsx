@@ -96,7 +96,7 @@ function LandingText() {
   }, []);
 
   return (
-    <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-50 ">
+    <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-40 ">
       <div className="flex flex-row items-center justify-center w-full absolute">
         <div className=" z-10 w-full flex items-center flex-col absolute w-4/5">
           <h1
@@ -112,7 +112,7 @@ function LandingText() {
             Software Engineer
           </h2>
         </div>
-        <div className="pl-8 z-0 flex align-middle justify-center">
+        <div className="z-0 flex align-middle justify-center">
           <h3
             ref={introRef}
             className="landing-intro text-gray-400 rounded-lg p-4 text-center text-2xl w-full md:w-1/2 "
@@ -133,7 +133,7 @@ function LandingText() {
           Technologies and Skills
         </h3>
         <ul className=" w-full justify-center flex-col flex items-center">
-          <div className=" flex items-center w-3/4 justify-evenly ">
+          <div className=" flex items-center w-11/12 justify-evenly ">
             <div className=" w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={javascript} alt="stack icon" />
               <li className=" text-white text-base">Javascript</li>
@@ -151,7 +151,7 @@ function LandingText() {
               <li className="text-white text-base">HTML</li>
             </div>
           </div>
-          <div className="flex items-center w-3/4 justify-evenly">
+          <div className="flex items-center w-11/12 justify-evenly">
             <div className="w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={css} alt="stack icon" />
               <li className="text-white text-base">CSS</li>
@@ -170,14 +170,14 @@ function LandingText() {
             </div>
           </div>
         </ul>
-        <div className="fixed bottom-0 m-4 flex items-end justify-center cursor-pointer">
+        {/* <div className="fixed bottom-0 m-4 flex items-end justify-center cursor-pointer">
           <a
             type="button"
             onClick="document.getElementById('nav').scrollIntoView();"
           >
             <Image className="w-1" src={down} alt="stack icon" />
           </a>
-        </div>
+        </div> */}
       </div>
     </article>
   );

@@ -15,7 +15,7 @@ export default function Animation() {
   const [imageTarget, setImageTarget] = useState(3000);
 
   useEffect(() => {
-    const frameCount = 263;
+    const frameCount = 273;
 
     const currentFrame = (index) =>
       `../best-ball/${(index + 1).toString()}.jpg`;
@@ -37,7 +37,9 @@ export default function Animation() {
         anticipatePin: 1,
 
         start: "top top",
-        end: `${imageTarget}px`,
+        // end: `${imageTarget}px`,
+        end: `380%`,
+
         scrub: 0.5,
       },
       onUpdate: render,

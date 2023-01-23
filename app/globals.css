@@ -5,3 +5,13 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+body {
+  background-color: black;
+}
+
+#canvas1 {
+  background-image: url("../public/backgrounds/nav-bg2.jpg");
+  background-position: center;
+  background-size: cover;
+}
