@@ -15,3 +15,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+svg {
+  display: none;
+}

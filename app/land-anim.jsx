@@ -18,7 +18,7 @@ export default function Animation() {
     const frameCount = 273;
 
     const currentFrame = (index) =>
-      `../best-ball/${(index + 1).toString()}.jpg`;
+      `../animation/${(index + 1).toString()}.jpg`;
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();

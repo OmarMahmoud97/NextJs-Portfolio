@@ -1,14 +1,13 @@
 import Animation from "./land-anim";
 import LandingText from "./landing-text";
 import NavPage from "./navPage";
-
 export default function Home() {
   return (
     <div>
       <Animation />
       <LandingText />
       <NavPage />
-      <svg class="svg">
+      <svg className="svg">
         <defs>
           <filter id="goo">
             <feGaussianBlur
