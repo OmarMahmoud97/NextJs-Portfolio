@@ -98,7 +98,7 @@ function LandingText() {
   return (
     <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-50 ">
       <div className="flex flex-row items-center justify-center w-full absolute">
-        <div className=" z-10 w-full flex items-center flex-col absolute w-1/3">
+        <div className=" z-10 w-full flex items-center flex-col absolute w-4/5">
           <h1
             ref={nameRef}
             className="landing-name text-white z-10 text-5xl w-full"
@@ -115,7 +115,7 @@ function LandingText() {
         <div className="pl-8 z-0 flex align-middle justify-center">
           <h3
             ref={introRef}
-            className="landing-intro text-gray-400 rounded-lg p-4 text-center text-2xl w-2/4 "
+            className="landing-intro text-gray-400 rounded-lg p-4 text-center text-2xl w-full md:w-1/2 "
           >
             It has been said a picture can paint a thousand words. I believe a
             website, an interactive picture, which can be experienced fully by
