@@ -96,7 +96,7 @@ function LandingText() {
   }, []);
 
   return (
-    <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-40 ">
+    <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-0 ">
       <div className="flex flex-row items-center justify-center w-full absolute">
         <div className=" z-10 w-full flex items-center flex-col absolute w-4/5">
           <h1
