@@ -10,15 +10,8 @@ body {
   background-color: black;
 }
 
-#canvas1,
-.contact,
-.more,
-.project {
-  background-position: center;
-  background-size: cover;
-}
-#canvas1 {
-  background-image: url("../public/backgrounds/navbg.jpg");
+.canvas1 {
+  background-image: url("../public/backgrounds/navmobileBG.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -48,5 +41,8 @@ svg {
 @media (min-width: 1280px) {
   .contact {
     background-image: url("../public/backgrounds/contactbg.jpg");
+  }
+  .canvas1 {
+    background-image: url("../public/backgrounds/navbg.jpg");
   }
 }

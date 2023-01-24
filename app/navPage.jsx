@@ -16,13 +16,12 @@ function NavPage() {
     <div className="w-full h-screen bg-black z-50 flex align-center justify-center">
       <div className="absolute">
         <Zoom id="nav" className="z-50" top delay={500}>
-          <Image
+          <div
             unoptimized={true}
             priority
             alt="background image of animation from a distance"
-            src={Background}
-            className="bg-black w-screen h-screen relative z-50"
-          ></Image>
+            className=" canvas1 bg-black w-screen h-screen relative z-50"
+          ></div>
         </Zoom>
       </div>
       <Zoom top className="flex align-center justify-center " delay={500}>

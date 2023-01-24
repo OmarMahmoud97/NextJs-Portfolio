@@ -15,7 +15,7 @@ export default function Animation() {
   const [imageTarget, setImageTarget] = useState(4400);
 
   useEffect(() => {
-    const frameCount = 301;
+    const frameCount = 300;
 
     const currentFrame = (index) =>
       `../animation/${(index + 1).toString()}.jpg`;
