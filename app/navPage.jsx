@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import Link from "next/link";
 import Zoom from "react-reveal/Zoom";
 import Image from "next/image";
-import Background from "../public/backgrounds/nav-bg.jpg";
+import Background from "../public/backgrounds/navbg.jpg";
 import Penguin from "../public/nav/penguin.gif";
 import Projects from "../public/nav/projects.gif";
 import Contact from "../public/nav/mail.gif";
@@ -25,23 +25,23 @@ function NavPage() {
           ></Image>
         </Zoom>
       </div>
-      <Zoom top className="flex align-center justify-center">
-        <div class="nav-social">
+      <Zoom top className="flex align-center justify-center " delay={500}>
+        <div className="nav-social">
           <a
-            class="nav-socials"
+            className="nav-socials"
             alt="top of page button"
             target="_blank"
             href="https://www.linkedin.com/in/omar-mahmoud97/"
           >
-            <Image class="nav-social-icon" src={Linkedin} alt="" />
+            <Image className="nav-social-icon" src={Linkedin} alt="" />
           </a>
           <a
-            class="nav-socials"
+            className="nav-socials"
             alt="top of page button"
             target="_blank"
             href="https://github.com/OmarMahmoud97"
           >
-            <Image class="nav-social-icon" src={Github} alt="" />
+            <Image className="nav-social-icon" src={Github} alt="" />
           </a>
         </div>
         <div className="nav-container z-50">

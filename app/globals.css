@@ -11,11 +11,27 @@ body {
 }
 
 #canvas1 {
-  background-image: url("../public/backgrounds/nav-bg.jpg");
+  background-image: url("../public/backgrounds/navbg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  background-image: url("../public/backgrounds/contactmobile.jpg");
   background-position: center;
   background-size: cover;
 }
 
 svg {
   display: none;
+}
+
+.textshadow {
+  text-shadow: 0.3rem 0.3rem 0.4rem #000;
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    background-image: url("../public/backgrounds/contactbg.jpg");
+  }
 }

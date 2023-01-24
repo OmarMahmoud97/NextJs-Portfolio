@@ -1,7 +1,9 @@
 import React from "react";
 
 function Contact() {
-  return <div className="text-white">Contact</div>;
+  return (
+    <section className="contact text-gray-500 w-screen h-screen flex items-center justify-center flex-col bg-center"></section>
+  );
 }
 
 export default Contact;

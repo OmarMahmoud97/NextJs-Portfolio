@@ -5,7 +5,7 @@ import "./liquidButton.css";
 function Button() {
   return (
     <>
-      <a href="">
+      <a href="/#nav">
         <div className="button">
           <Image className="nav-icon" src={Arrow} alt="projects icon" />
           <div className="blurred">

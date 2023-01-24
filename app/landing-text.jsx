@@ -101,13 +101,13 @@ function LandingText() {
         <div className=" z-10 w-full flex items-center flex-col absolute w-4/5">
           <h1
             ref={nameRef}
-            className="landing-name text-white z-10 text-5xl w-full"
+            className="textshadow landing-name text-white z-10 text-5xl w-full"
           >
             Omar Mahmoud
           </h1>
           <h2
             ref={subRef}
-            className="landing-subname text-teal-500 text-3xl w-full font-bold mt-8"
+            className="textshadow landing-subname text-teal-500 text-3xl w-full font-bold mt-8"
           >
             Software Engineer
           </h2>
@@ -115,7 +115,7 @@ function LandingText() {
         <div className="z-0 flex align-middle justify-center">
           <h3
             ref={introRef}
-            className="landing-intro text-white rounded-lg p-4 text-center text-2xl w-full md:w-1/2 "
+            className="textshadow landing-intro text-white rounded-lg p-4 text-center text-2xl w-full md:w-1/2 "
           >
             It has been said a picture can paint a thousand words. I believe a
             website, an interactive picture, which can be experienced fully by
@@ -129,42 +129,42 @@ function LandingText() {
         </div>
       </div>
       <div ref={toolsRef} className="landing-tools w-full absolute">
-        <h3 className=" mb-8 text-white text-3xl w-full text-center">
+        <h3 className="textshadow mb-8 text-white text-3xl w-full text-center">
           Technologies and Skills
         </h3>
         <ul className=" w-full justify-center flex-col flex items-center">
           <div className=" flex items-center w-11/12 justify-evenly ">
-            <div className=" w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={javascript} alt="stack icon" />
               <li className=" text-white text-base">Javascript</li>
             </div>
-            <div className=" w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={react} alt="stack icon" />
               <li className="text-white text-base">React JS</li>
             </div>
-            <div className=" w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={node} alt="stack icon" />
               <li className="text-white text-base">NodeJs</li>
             </div>
-            <div className=" w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={html} alt="stack icon" />
               <li className="text-white text-base">HTML</li>
             </div>
           </div>
           <div className="flex items-center w-11/12 justify-evenly">
-            <div className="w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={css} alt="stack icon" />
               <li className="text-white text-base">CSS</li>
             </div>
-            <div className="w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={blender} alt="stack icon" />
               <li className="text-white text-base">Blender</li>
             </div>
-            <div className="w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={figma} alt="stack icon" />
               <li className="text-white text-base">Figma</li>
             </div>
-            <div className="w-56 flex flex-col items-center justify-between h-full">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={next} alt="stack icon" />
               <li className="text-white text-base">Next.js</li>
             </div>

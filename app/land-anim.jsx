@@ -12,7 +12,7 @@ export default function Animation() {
   const canvasRef = useRef(null);
   const [images, setImages] = useState([]);
   const [ball, setBall] = useState({ frame: 0 });
-  const [imageTarget, setImageTarget] = useState(3000);
+  const [imageTarget, setImageTarget] = useState(3200);
 
   useEffect(() => {
     const frameCount = 273;
@@ -38,7 +38,7 @@ export default function Animation() {
 
         start: "top top",
         // end: `${imageTarget}px`,
-        end: `380%`,
+        end: `420%`,
 
         scrub: 0.5,
       },
