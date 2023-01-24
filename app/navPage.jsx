@@ -14,7 +14,7 @@ function NavPage() {
   return (
     <div className="w-full h-screen bg-black z-50 flex align-center justify-center">
       <div className="absolute">
-        <Zoom id="nav" className="z-50" top delay={500}>
+        <Zoom id="nav" className="z-50" top delay={400}>
           <div
             unoptimized={true}
             priority
@@ -23,7 +23,7 @@ function NavPage() {
           ></div>
         </Zoom>
       </div>
-      <Zoom top className="flex align-center justify-center " delay={500}>
+      <Zoom top className="flex align-center justify-center " delay={400}>
         <div className="nav-social">
           <a
             className="nav-socials"
