@@ -12,10 +12,10 @@ export default function Animation() {
   const canvasRef = useRef(null);
   const [images, setImages] = useState([]);
   const [ball, setBall] = useState({ frame: 0 });
-  const [imageTarget, setImageTarget] = useState(2200);
+  const [imageTarget, setImageTarget] = useState(3700);
 
   useEffect(() => {
-    const frameCount = 273;
+    const frameCount = 300;
 
     const currentFrame = (index) =>
       `../animation/${(index + 1).toString()}.jpg`;
@@ -32,14 +32,13 @@ export default function Animation() {
       frame: frameCount,
       snap: "frame",
       overwrite: "true",
+      ease: "none",
       scrollTrigger: {
         trigger: "#canvas",
         anticipatePin: 1,
-
         start: "top top",
-        // end: `${imageTarget}px`,
-        end: `320%`,
-
+        end: `${imageTarget}px`,
+        // end: `320%`,
         scrub: 0.5,
       },
       onUpdate: render,
