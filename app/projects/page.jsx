@@ -1,13 +1,13 @@
 "use client";
 import Button from "@/components/liquidButton/liquidButton";
-import Link from "next/link";
+// import Link from "next/link";
 
 function Projects() {
   return (
     <div className="project text-white h-screen w-screen">
-      <Link href="/#nav">
+      {/* <Link href="/#nav">
         <Button />
-      </Link>
+      </Link> */}
     </div>
   );
 }

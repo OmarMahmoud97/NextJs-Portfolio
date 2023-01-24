@@ -3,7 +3,6 @@ import { useRef, useEffect } from "react";
 import Link from "next/link";
 import Zoom from "react-reveal/Zoom";
 import Image from "next/image";
-import Background from "../public/backgrounds/navbg.jpg";
 import Penguin from "../public/nav/penguin.gif";
 import Projects from "../public/nav/projects.gif";
 import Contact from "../public/nav/mail.gif";

@@ -10,7 +10,7 @@ body {
   background-color: black;
 }
 
-.canvas {
+.canvas1 {
   background-image: url("../public/backgrounds/navmobileBG.jpg");
   background-position: center;
   background-size: cover;
@@ -21,12 +21,12 @@ body {
   background-size: cover;
 }
 .more {
-  background-image: url("../public/backgrounds/morebg.jpg");
+  background-image: url("../public/backgrounds/newbg.jpg");
   background-position: center;
   background-size: cover;
 }
 .project {
-  background-image: url("../public/backgrounds/projectbg.jpg");
+  background-image: url("../public/backgrounds/projectmobile.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -44,5 +44,11 @@ svg {
   }
   .canvas1 {
     background-image: url("../public/backgrounds/navbg.jpg");
+  }
+  .more {
+    background-image: url("../public/backgrounds/morebg.jpg");
+  }
+  .project {
+    background-image: url("../public/backgrounds/projectbg.jpg");
   }
 }
