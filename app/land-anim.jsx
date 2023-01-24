@@ -12,7 +12,7 @@ export default function Animation() {
   const canvasRef = useRef(null);
   const [images, setImages] = useState([]);
   const [ball, setBall] = useState({ frame: 0 });
-  const [imageTarget, setImageTarget] = useState(4000);
+  const [imageTarget, setImageTarget] = useState(2200);
 
   useEffect(() => {
     const frameCount = 273;

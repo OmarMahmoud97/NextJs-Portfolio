@@ -68,8 +68,8 @@ function LandingText() {
         opacity: 1,
         scrollTrigger: {
           scrub: 0.2,
-          start: "15%",
-          end: "25%",
+          start: "10%",
+          end: "20%",
         },
         onComplete: () => {
           gsap.to(".landing-intro", { opacity: 0 });
@@ -85,8 +85,8 @@ function LandingText() {
         opacity: 1,
         scrollTrigger: {
           scrub: 0.2,
-          start: "40%",
-          end: "60%",
+          start: "30%",
+          end: "45%",
         },
         onComplete: () => {
           gsap.to(".landing-tools", { opacity: 0 });
