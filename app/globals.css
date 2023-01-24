@@ -10,18 +10,33 @@ body {
   background-color: black;
 }
 
+#canvas1,
+.contact,
+.more,
+.project {
+  background-position: center;
+  background-size: cover;
+}
 #canvas1 {
   background-image: url("../public/backgrounds/navbg.jpg");
   background-position: center;
   background-size: cover;
 }
-
 .contact {
   background-image: url("../public/backgrounds/contactmobile.jpg");
   background-position: center;
   background-size: cover;
 }
-
+.more {
+  background-image: url("../public/backgrounds/morebg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.project {
+  background-image: url("../public/backgrounds/projectbg.jpg");
+  background-position: center;
+  background-size: cover;
+}
 svg {
   display: none;
 }

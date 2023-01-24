@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Projects() {
   return (
-    <div className="text-white">
+    <div className="project text-white h-screen w-screen">
       <Link href="/#nav">
         <Button />
       </Link>
