@@ -39,9 +39,6 @@ svg {
 }
 
 @media (min-width: 1280px) {
-  .contact {
-    background-image: url("../public/backgrounds/contactbg.jpg");
-  }
   .canvas1 {
     background-image: url("../public/backgrounds/navbg.jpg");
   }
@@ -50,5 +47,11 @@ svg {
   }
   .project {
     background-image: url("../public/backgrounds/projectbg.jpg");
+  }
+}
+
+@media (min-width: 1080px) {
+  .contact {
+    background-image: url("../public/backgrounds/contactbg.jpg");
   }
 }
