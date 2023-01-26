@@ -128,7 +128,7 @@
     height: 5rem;
     top: 0;
     left: 0;
-    background-color: rgb(15, 65, 108);
+    background-color: #4b667e;
     border-radius: 100%;
     transition: 2s cubic-bezier(0, 2, 0.61, -0.05);
   }
@@ -224,7 +224,7 @@
     height: 8rem;
     top: 0;
     left: 0;
-    background-color: rgb(15, 65, 108);
+    background-color: #4b667e;
     border-radius: 100%;
     transition: 2s cubic-bezier(0, 2, 0.61, -0.05);
   }

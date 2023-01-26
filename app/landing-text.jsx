@@ -98,7 +98,7 @@ function LandingText() {
   return (
     <article className=" top-0 fixed w-full flex items-end flex-col justify-center h-full z-0 ">
       <div className="flex flex-row items-center justify-center w-full absolute">
-        <div className=" z-10 w-full flex items-center flex-col absolute w-4/5">
+        <div className=" z-10 flex items-center flex-col absolute w-4/5">
           <h1
             ref={nameRef}
             className="textshadow landing-name text-white z-10 text-5xl w-full"
@@ -113,19 +113,25 @@ function LandingText() {
           </h2>
         </div>
         <div className="z-0 flex align-middle justify-center">
-          <h3
+          <p
             ref={introRef}
-            className="textshadow landing-intro text-white rounded-lg p-4 text-center text-2xl w-full md:w-1/2 "
+            className=" textshadow landing-intro text-white rounded-lg p-4 text-center  w-full md:w-1/2 text-xl "
           >
             It has been said a picture can paint a thousand words. I believe a
             website, an interactive picture, which can be experienced fully by
             the user, an entire world for them to immerse themselves in, can
             speak volumes. <br />
             <br />
-            The internet is an ever growing part of our society and I intend to
-            challenge its creative limitations to provide users with the most
-            immersive experience possible.
-          </h3>
+            As technology continues to evolve, I am dedicated to creating
+            interactive and engaging digital experiences for users. From
+            designing and developing websites to building custom applications,
+            my goal is to bring my clients' visions to life.
+            <br />
+            <br /> I enjoy staying up-to-date with the latest technologies and
+            industry trends to ensure that my work is cutting-edge and
+            efficient. I am excited to continue pushing the limits of the
+            digital world, and I invite you to explore my portfolio.
+          </p>
         </div>
       </div>
       <div ref={toolsRef} className="landing-tools w-full absolute">

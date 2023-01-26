@@ -6,9 +6,9 @@ function Contact() {
       <div className=" w-2/5 h-screen"></div>
       <div className="lg:w-full h-screen flex flex-col items-center justify-center">
         <h1 className=" text-white text-3xl textshadow my-3">Contact</h1>
-        <form action="" className="flex flex-col w-9/12">
+        <form action="" className="max-w-3xl flex flex-col w-10/12">
           <div className="flex items-center justify-between">
-            <div className="w-6/12 my-2">
+            <div className="mx-1 w-6/12 my-2">
               <label
                 for="small-input"
                 className=" textshadow block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -17,11 +17,12 @@ function Contact() {
               </label>
               <input
                 type="text"
+                placeholder="First name..."
                 id="small-input"
-                className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className=" block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
             </div>
-            <div className="w-6/12 my-2">
+            <div className="mx-1 w-6/12 my-2">
               <label
                 for="small-input"
                 className=" textshadow block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -30,6 +31,7 @@ function Contact() {
               </label>
               <input
                 type="text"
+                placeholder="Last name..."
                 id="small-input"
                 className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
@@ -45,6 +47,7 @@ function Contact() {
             <input
               type="text"
               id="small-input"
+              placeholder="Email..."
               className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             />
           </div>
@@ -64,7 +67,7 @@ function Contact() {
           </div>
           <button
             type="button"
-            class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
           >
             Submit
           </button>

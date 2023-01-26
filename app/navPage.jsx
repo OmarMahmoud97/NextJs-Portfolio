@@ -1,6 +1,4 @@
 "use client";
-import { useRef, useEffect } from "react";
-import Link from "next/link";
 import Zoom from "react-reveal/Zoom";
 import Image from "next/image";
 import Penguin from "../public/nav/penguin.gif";
@@ -12,9 +10,12 @@ import Linkedin from "../public/social-icons/linkedin.gif";
 import "./nav-anim.css";
 function NavPage() {
   return (
-    <div className="w-full h-screen bg-black z-50 flex align-center justify-center">
+    <div
+      id="nav"
+      className="w-full h-screen bg-black z-50 flex align-center justify-center"
+    >
       <div className="absolute">
-        <Zoom id="nav" className="z-50" top delay={400}>
+        <Zoom className="z-50" top delay={400}>
           <div
             unoptimized={true}
             priority
@@ -43,7 +44,7 @@ function NavPage() {
           </a>
         </div>
         <div className="nav-container z-50">
-          <Link href="/projects" className="nav-label z-50 cursor-pointer">
+          <a href="/projects" className="nav-label z-50 cursor-pointer">
             <div className="button">
               <Image className="nav-icon" src={Projects} alt="projects icon" />
               <div className="blurred">
@@ -52,8 +53,8 @@ function NavPage() {
               </div>
             </div>
             <div className="nav-span">Projects</div>
-          </Link>
-          <Link href="/more" className="nav-label nav-label-middle">
+          </a>
+          <a href="/more" className="nav-label nav-label-middle">
             <div className="button">
               <Image className="nav-icon" src={Penguin} alt="penguin icon" />
               <div className="blurred">
@@ -62,8 +63,8 @@ function NavPage() {
               </div>
             </div>
             <div className="nav-span">More about me</div>
-          </Link>
-          <Link href="/contact" className="nav-label">
+          </a>
+          <a href="/contact" className="nav-label">
             <div className="button">
               <Image className="nav-icon" src={Contact} alt="mail icon" />
               <div className="blurred">
@@ -72,7 +73,7 @@ function NavPage() {
               </div>
             </div>
             <div className="nav-span">Contact</div>
-          </Link>
+          </a>
         </div>
       </Zoom>
     </div>

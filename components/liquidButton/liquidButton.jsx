@@ -1,11 +1,11 @@
 import Arrow from "../../public/stack-icons/arrow.png";
 import Image from "next/image";
 import "./liquidButton.css";
-
+import Link from "next/link";
 function Button() {
   return (
     <>
-      <a href="/#nav">
+      <a href="/#nav" passHref>
         <div className="button">
           <Image className="nav-icon" src={Arrow} alt="projects icon" />
           <div className="blurred">
