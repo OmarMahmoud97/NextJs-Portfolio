@@ -2,13 +2,13 @@ import ElasticCarousel from "@/components/carousel/carousel";
 function More() {
   return (
     <section className="more w-screen h-screen text-white">
-      <div className="w-screen h-screen flex items-center justify-center flex-col">
+      <div className="w-screen h-screen flex items-center justify-evenly flex-col">
         <div className="header">
           <h1 className="text-white text-3xl textshadow my-3">Know Me More</h1>
         </div>
         <div className="p-2 flex flex-col lg:flex-row flex-col-reverse">
           <div className="lg:w-2/4 flex items-center justify-center">
-            <p className="textshadow h-80 overflow-scroll lg:overflow-unset px-4">
+            <p className="textshadow h-80 overflow-scroll md:overflow-visible px-4">
               I'm a software engineer from London.With a history working with
               animals as a zoo keeper, but recently found my true passion in
               technology. <br />
