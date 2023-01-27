@@ -28,30 +28,6 @@
   transition: 2s cubic-bezier(0, 2, 0.61, -0.05);
 }
 
-.svg-liquid {
-  width: 0;
-  height: 0;
-  display: none;
-}
-
-.nav-top {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 0.5rem;
-  z-index: 11;
-  text-decoration: none;
-  columns: red;
-}
-
-.nav-button {
-  color: black;
-  font-weight: bold;
-}
-
 @media (min-width: 320px) {
   .nav-container {
     flex-direction: column;
@@ -249,22 +225,13 @@
   height: 100vh;
 }
 
-.nav-container {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .nav-icon1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 90%;
+  height: 70%;
+  width: 70%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
   z-index: 10;
   border-radius: 100%;
 }

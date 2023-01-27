@@ -6,7 +6,6 @@ import Projects from "../public/nav/projects.gif";
 import Contact from "../public/nav/mail.gif";
 import Github from "../public/social-icons/github.png";
 import Linkedin from "../public/social-icons/linkedin.gif";
-
 import "./nav-anim.css";
 function NavPage() {
   return (
@@ -52,7 +51,7 @@ function NavPage() {
                 <span></span> <span></span> <span></span>
               </div>
             </div>
-            <div className="nav-span">Projects</div>
+            <div className="nav-span ">Projects</div>
           </a>
           <a href="/more" className="nav-label nav-label-middle">
             <div className="button">
