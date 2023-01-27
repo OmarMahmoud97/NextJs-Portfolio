@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "@/components/liquidButton/liquidButton";
 
 function Contact() {
   return (
@@ -72,6 +72,9 @@ function Contact() {
             Submit
           </button>
         </form>
+        <div>
+          <Button />
+        </div>
       </div>
     </section>
   );

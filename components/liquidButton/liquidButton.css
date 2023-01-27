@@ -1,14 +1,14 @@
-.blurred {
+.blurred1 {
   position: relative;
   top: 0;
   left: 0;
-  width: 8rem;
-  height: 8rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   filter: url(#goo);
 }
 
-.blurred::before {
+.blurred1::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -18,7 +18,7 @@
   transition: 2s cubic-bezier(0, 2, 0.61, -0.05);
 }
 
-.blurred::after {
+.blurred1::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -56,50 +56,50 @@
   .nav-container {
     flex-direction: column;
   }
-  .blurred:hover .blurred::after {
+  .blurred1:hover .blurred1::after {
     width: 1.75rem;
     height: 1.75rem;
     top: 7.5rem;
-    left: 8.2rem;
+    left: 8.5rem;
   }
 
-  .button:hover .blurred > span:nth-of-type(1) {
-    width: 2rem;
-    height: 2rem;
-    top: -2rem;
+  .button1:hover .blurred1 > span:nth-of-type(1) {
+    width: 5rem;
+    height: 5rem;
+    top: -5rem;
     left: -3rem;
     background-color: rgb(42, 108, 165);
   }
 
-  .button:hover .blurred > span:nth-of-type(2) {
+  .button1:hover .blurred1 > span:nth-of-type(2) {
     width: 2.5rem;
     height: 2.5rem;
     top: 40px;
     left: -2.5rem;
     background-color: rgb(29, 87, 139);
   }
-  .button:hover .blurred > span:nth-of-type(3) {
+  .button1:hover .blurred1 > span:nth-of-type(3) {
     width: 1rem;
     height: 1rem;
     top: 6rem;
     left: 7rem;
     background-color: rgb(21, 54, 81);
   }
-  .button:hover .blurred > span:nth-of-type(4) {
+  .button1:hover .blurred1 > span:nth-of-type(4) {
     width: 3.5rem;
-    height: 2rem;
+    height: 5rem;
     top: 0;
     left: 7rem;
     background-color: rgb(32, 102, 163);
   }
-  .button:hover .blurred > span:nth-of-type(5) {
+  .button1:hover .blurred1 > span:nth-of-type(5) {
     width: 2.5rem;
-    height: 2rem;
+    height: 5rem;
     top: 10rem;
-    left: 2rem;
+    left: 5rem;
     background-color: rgb(14, 57, 95);
   }
-  .button:hover .blurred > span:nth-of-type(6) {
+  .button1:hover .blurred1 > span:nth-of-type(6) {
     width: 1rem;
     height: 1rem;
     top: -3rem;
@@ -107,7 +107,7 @@
     background-color: rgb(21, 70, 113);
   }
 
-  .blurred {
+  .blurred1 {
     position: relative;
     top: 0;
     left: 0;
@@ -116,13 +116,13 @@
     border-radius: 100%;
     filter: url(#goo);
   }
-  .blurred > span:nth-of-type(1),
-  .blurred > span:nth-of-type(2),
-  .blurred > span:nth-of-type(3),
-  .blurred > span:nth-of-type(4),
-  .blurred > span:nth-of-type(5),
-  .blurred > span:nth-of-type(6),
-  .blurred > span:nth-of-type(7) {
+  .blurred1 > span:nth-of-type(1),
+  .blurred1 > span:nth-of-type(2),
+  .blurred1 > span:nth-of-type(3),
+  .blurred1 > span:nth-of-type(4),
+  .blurred1 > span:nth-of-type(5),
+  .blurred1 > span:nth-of-type(6),
+  .blurred1 > span:nth-of-type(7) {
     position: absolute;
     width: 5rem;
     height: 5rem;
@@ -133,13 +133,13 @@
     transition: 2s cubic-bezier(0, 2, 0.61, -0.05);
   }
 
-  .blurred:hover .blurred::before {
+  .blurred1:hover .blurred1::before {
     width: 5rem;
     height: 5rem;
     top: 50%;
     left: 50%;
   }
-  .button {
+  .button1 {
     position: relative;
     width: 5rem;
     height: 5rem;
@@ -151,77 +151,77 @@
   .nav-container {
     flex-direction: row;
   }
-  .blurred:hover .blurred::after {
-    width: 3.5rem;
-    height: 3.5rem;
-    top: 7.5rem;
-    left: 8.2rem;
+  .blurred1:hover .blurred1::after {
+    width: 1.75rem;
+    height: 1.75rem;
+    top: 3.75rem;
+    left: 4.5rem;
   }
 
-  .button:hover .blurred > span:nth-of-type(1) {
-    width: 4rem;
-    height: 4rem;
-    top: -2rem;
-    left: -3rem;
+  .button1:hover .blurred1 > span:nth-of-type(1) {
+    width: 2rem;
+    height: 2rem;
+    top: -1.7rem;
+    left: -1.5rem;
     background-color: rgb(42, 108, 165);
   }
 
-  .button:hover .blurred > span:nth-of-type(2) {
-    width: 5rem;
-    height: 5rem;
-    top: 40px;
-    left: -2.5rem;
+  .button1:hover .blurred1 > span:nth-of-type(2) {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 1.7rem;
+    left: -2.25rem;
     background-color: rgb(29, 87, 139);
   }
-  .button:hover .blurred > span:nth-of-type(3) {
-    width: 2rem;
-    height: 2rem;
-    top: 6rem;
-    left: 7rem;
+  .button1:hover .blurred1 > span:nth-of-type(3) {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 3.5rem;
+    left: 5.2rem;
     background-color: rgb(21, 54, 81);
   }
-  .button:hover .blurred > span:nth-of-type(4) {
-    width: 7rem;
-    height: 4rem;
-    top: 0;
-    left: 7rem;
+  .button1:hover .blurred1 > span:nth-of-type(4) {
+    width: 3.5rem;
+    height: 2rem;
+    top: 1rem;
+    left: 3.5rem;
     background-color: rgb(32, 102, 163);
   }
-  .button:hover .blurred > span:nth-of-type(5) {
-    width: 5rem;
-    height: 4rem;
-    top: 10rem;
-    left: 2rem;
+  .button1:hover .blurred1 > span:nth-of-type(5) {
+    width: 2.5rem;
+    height: 2rem;
+    top: 4.5rem;
+    left: 1rem;
     background-color: rgb(14, 57, 95);
   }
-  .button:hover .blurred > span:nth-of-type(6) {
-    width: 2rem;
-    height: 2rem;
-    top: -3rem;
-    left: 4rem;
+  .button1:hover .blurred1 > span:nth-of-type(6) {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -2.5rem;
+    left: 2rem;
     background-color: rgb(21, 70, 113);
   }
 
-  .blurred {
+  .blurred1 {
     position: relative;
     top: 0;
     left: 0;
-    width: 8rem;
-    height: 8rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
     filter: url(#goo);
   }
 
-  .blurred > span:nth-of-type(1),
-  .blurred > span:nth-of-type(2),
-  .blurred > span:nth-of-type(3),
-  .blurred > span:nth-of-type(4),
-  .blurred > span:nth-of-type(5),
-  .blurred > span:nth-of-type(6),
-  .blurred > span:nth-of-type(7) {
+  .blurred1 > span:nth-of-type(1),
+  .blurred1 > span:nth-of-type(2),
+  .blurred1 > span:nth-of-type(3),
+  .blurred1 > span:nth-of-type(4),
+  .blurred1 > span:nth-of-type(5),
+  .blurred1 > span:nth-of-type(6),
+  .blurred1 > span:nth-of-type(7) {
     position: absolute;
-    width: 8rem;
-    height: 8rem;
+    width: 4rem;
+    height: 4rem;
     top: 0;
     left: 0;
     background-color: #4b667e;
@@ -229,16 +229,16 @@
     transition: 2s cubic-bezier(0, 2, 0.61, -0.05);
   }
 
-  .blurred:hover .blurred::before {
-    width: 8rem;
-    height: 8rem;
+  .blurred1:hover .blurred1::before {
+    width: 4rem;
+    height: 4rem;
     top: 50%;
     left: 50%;
   }
-  .button {
+  .button1 {
     position: relative;
-    width: 8rem;
-    height: 8rem;
+    width: 4rem;
+    height: 4rem;
     margin: 0 auto;
   }
 }
@@ -258,7 +258,7 @@
   justify-content: space-around;
 }
 
-.nav-icon {
+.nav-icon1 {
   position: absolute;
   top: 50%;
   left: 50%;

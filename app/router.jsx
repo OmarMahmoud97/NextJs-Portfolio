@@ -1,7 +1,7 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
-function ParentComponent() {
-  const router = useRouter();
+// function ParentComponent() {
+//   const router = useRouter();
 
-  return <ChildComponent router={router} />;
-}
+//   return <ChildComponent router={router} />;
+// }

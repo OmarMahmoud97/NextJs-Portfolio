@@ -1,3 +1,4 @@
+import Button from "@/components/liquidButton/liquidButton";
 import ElasticCarousel from "@/components/carousel/carousel";
 function More() {
   return (
@@ -9,9 +10,10 @@ function More() {
         <div className="p-2 flex flex-col lg:flex-row flex-col-reverse">
           <div className="lg:w-2/4 flex items-center justify-center">
             <p className="textshadow h-80 overflow-scroll md:overflow-visible px-4">
-              I'm a software engineer from London.With a history working with
-              animals as a zoo keeper, but recently found my true passion in
-              technology. <br />
+              I am a software engineer from London with a background in zoo
+              keeping. However, I have recently discovered my true passion in
+              technology and have been focusing on developing my skills in this
+              field. <br />
               <br /> As Robert Love, a Sr. Engineer Director at Google, said,
               "Software is the most malleable of media. With just 'bits' which
               are nothing, really, a software engineer can build castles out of
@@ -34,7 +36,9 @@ function More() {
             <ElasticCarousel />
           </div>
         </div>
-        <div className="button"></div>
+        <div className="button">
+          <Button />
+        </div>
       </div>
     </section>
   );

@@ -6,9 +6,9 @@ function Button() {
   return (
     <>
       <a href="/#nav" passHref>
-        <div className="button">
-          <Image className="nav-icon" src={Arrow} alt="projects icon" />
-          <div className="blurred">
+        <div className="button1">
+          <Image className="nav-icon1" src={Arrow} alt="projects icon" />
+          <div className="blurred1">
             <span></span>
             <span></span>
             <span></span>
