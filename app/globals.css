@@ -42,9 +42,7 @@ svg {
   .canvas1 {
     background-image: url("../public/backgrounds/navbg.jpg");
   }
-  .more {
-    background-image: url("../public/backgrounds/morebg.jpg");
-  }
+
   .project {
     background-image: url("../public/backgrounds/projectbg.jpg");
   }
@@ -54,4 +52,79 @@ svg {
   .contact {
     background-image: url("../public/backgrounds/contactbg.jpg");
   }
+}
+
+@media (min-width: 768px) {
+  .more {
+    background-image: url("../public/backgrounds/morebg.jpg");
+  }
+}
+
+.carousel-video {
+  width: 80%;
+  height: 100%;
+}
+
+#css {
+  color: #ff0;
+  font-family: "Odibee Sans", cursive;
+}
+.carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 800px;
+  display: block;
+  margin: 50px auto;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  padding: 10px 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+.arrow-next,
+.arrow-prev {
+  position: absolute;
+  top: 50%;
+}
+.arrow-prev {
+  left: 30px;
+  transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next {
+  right: 30px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+[id^="item"] {
+  display: none;
+}
+.item-1,
+.item-2,
+.item-3 {
+  background-size: cover;
+}
+
+:target ~ .item-1 {
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
 }

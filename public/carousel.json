@@ -1,0 +1,18 @@
+{
+  "items": {
+    "elastic": [
+      {
+        "id": 1,
+        "imageUrl": "./videos/charlie.mp4"
+      },
+      {
+        "id": 2,
+        "imageUrl": "./videos/owl-show.mp4"
+      },
+      {
+        "id": 3,
+        "imageUrl": "./videos/patagonian-conure2.mp4"
+      }
+    ]
+  }
+}

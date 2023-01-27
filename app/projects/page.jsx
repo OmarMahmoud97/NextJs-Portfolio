@@ -3,9 +3,9 @@ import Button from "@/components/liquidButton/liquidButton";
 
 function Projects() {
   return (
-    <div className="project text-white h-screen w-screen">
+    <section className="project text-white h-screen w-screen">
       <Button />
-    </div>
+    </section>
   );
 }
 
