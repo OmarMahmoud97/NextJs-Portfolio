@@ -1,5 +1,4 @@
 import ElasticCarousel from "@/components/carousel/carousel";
-import React from "react";
 function More() {
   return (
     <section className="more w-screen h-screen text-white">
