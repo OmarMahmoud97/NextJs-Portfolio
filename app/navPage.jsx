@@ -78,5 +78,4 @@ function NavPage() {
     </div>
   );
 }
-
 export default NavPage;
