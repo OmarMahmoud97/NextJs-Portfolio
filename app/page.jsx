@@ -1,6 +1,6 @@
-import Animation from "./land-anim";
-import LandingText from "./landing-text";
-import NavPage from "./navPage";
+import LandingText from "@/components/landing-text/landing-text";
+import Animation from "@/components/landing-animation/land-anim";
+import NavPage from "@/components/nav-page/navPage";
 export default function Home() {
   return (
     <div>

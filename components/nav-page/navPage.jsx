@@ -1,11 +1,11 @@
 "use client";
 import Zoom from "react-reveal/Zoom";
 import Image from "next/image";
-import Penguin from "../public/nav/penguin.gif";
-import Projects from "../public/nav/projects.gif";
-import Contact from "../public/nav/mail.gif";
-import Github from "../public/social-icons/github.png";
-import Linkedin from "../public/social-icons/linkedin.gif";
+import Penguin from "../../public/nav/penguin.gif";
+import Projects from "../../public/nav/projects.gif";
+import Contact from "../../public/nav/mail.gif";
+import Github from "../../public/social-icons/github.png";
+import Linkedin from "../../public/social-icons/linkedin.gif";
 import "./nav-anim.css";
 function NavPage() {
   return (
