@@ -2,7 +2,7 @@ import Button from "@/components/liquidButton/liquidButton";
 import ElasticCarousel from "@/components/carousel/carousel";
 function More() {
   return (
-    <section className="more w-screen h-screen text-white">
+    <section className="more bg-center bg-cover w-screen h-screen text-white">
       <div className="w-screen h-screen flex items-center justify-evenly flex-col">
         <div className="header">
           <h1 className="text-white text-3xl textshadow my-3">Know Me More</h1>

@@ -5,66 +5,92 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
 body {
-  background-color: black;
+  background-color: #000;
 }
-
-.canvas1 {
-  background-image: url("../public/backgrounds/navmobileBG.jpg");
+.canvas1,
+.contact,
+.front,
+.project {
+  background-image: url(../public/backgrounds/navmobileBG.jpg);
   background-position: center;
   background-size: cover;
 }
-.contact {
-  background-image: url("../public/backgrounds/contactmobile.jpg");
+.front1 {
+  background-image: url(../public/projects/1.jpg);
   background-position: center;
   background-size: cover;
 }
-.more {
-  background-image: url("../public/backgrounds/newbg.jpg");
+.front2 {
+  background-image: url(../public/projects/4.jpg);
   background-position: center;
   background-size: cover;
+}
+.front3 {
+  background-image: url(../public/projects/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.front4 {
+  background-image: url(../public/projects/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.front5 {
+  background-image: url(../public/projects/5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.front5 {
+  background-image: url(../public/projects/5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.front6 {
+  background-image: url(../public/projects/6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contact,
+.more,
+.project {
+  background-image: url(../public/backgrounds/contactmobile.jpg);
+}
+.more,
+.project {
+  background-image: url(../public/backgrounds/newbg.jpg);
 }
 .project {
-  background-image: url("../public/backgrounds/projectmobile.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url(../public/backgrounds/projectmobile.jpg);
 }
 svg {
   display: none;
 }
-
 .textshadow {
   text-shadow: 0.3rem 0.3rem 0.4rem #000;
 }
-
 @media (min-width: 1280px) {
   .canvas1 {
-    background-image: url("../public/backgrounds/navbg.jpg");
-  }
-
-  .project {
-    background-image: url("../public/backgrounds/projectbg.jpg");
+    background-image: url(../public/backgrounds/navbg.jpg);
   }
 }
-
 @media (min-width: 1080px) {
   .contact {
-    background-image: url("../public/backgrounds/contactbg.jpg");
+    background-image: url(../public/backgrounds/contactbg.jpg);
   }
 }
-
 @media (min-width: 768px) {
+  .project {
+    background-image: url(../public/backgrounds/projectbg.jpg);
+  }
   .more {
-    background-image: url("../public/backgrounds/morebg.jpg");
+    background-image: url(../public/backgrounds/morebg.jpg);
   }
 }
-
 .carousel-video {
   width: 80%;
   height: 100%;
 }
-
 #css {
   color: #ff0;
   font-family: "Odibee Sans", cursive;
@@ -116,7 +142,6 @@ svg {
 .item-3 {
   background-size: cover;
 }
-
 :target ~ .item-1 {
   opacity: 0;
 }
@@ -127,4 +152,145 @@ svg {
 #item-3:target ~ .item-3 {
   z-index: 3;
   opacity: 1;
+}
+.col {
+  width: 31%;
+  margin: 1rem 1rem 0.25rem 0;
+}
+.container,
+.container .back {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.container {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.back,
+.container:hover .back,
+.container:hover .front,
+.front {
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.back,
+.front {
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 250px;
+}
+.back {
+  background: #cedce7;
+  background: linear-gradient(45deg, #2e3192 0, #1bffff 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.front .inner p:after,
+.front:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+}
+.front:after,
+.inner {
+  width: 100%;
+  height: 100%;
+}
+.front:after {
+  top: 0;
+  z-index: 1;
+  opacity: 0.6;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-position: center;
+  background-size: contain;
+}
+.container:hover .back,
+.container:hover .front {
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.inner {
+  transform: translateY(-50%) translateZ(5rem) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-subtitle {
+  color: #3358ea;
+  font-weight: 700;
+  text-shadow: 0.2rem 0.2rem 0.4rem #fff;
+  font-size: 1rem;
+}
+.container .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.container .front,
+.container:hover .back,
+.container:hover .front {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.front .inner p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.front .inner p:after {
+  width: 4rem;
+  height: 2px;
+  background: #c6d4df;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
+}
+@media only screen and (max-width: 1180px) {
+  .col {
+    margin: 1rem 0.75rem;
+    width: 18rem;
+  }
+  .back,
+  .front {
+    min-height: 200px;
+  }
+  .project-link {
+    padding: 2px;
+  }
+  .project-stack-item,
+  .project-subtitle {
+    font-size: 0.8rem;
+  }
+  .inner {
+    padding: 5px;
+  }
+  .body {
+    background: #000;
+    background: radial-gradient(circle, #000 0, #103953 35%);
+  }
 }
