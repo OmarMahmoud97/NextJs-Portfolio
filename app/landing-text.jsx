@@ -200,14 +200,6 @@ function LandingText() {
             </div>
           </div>
         </ul>
-        {/* <div className="fixed bottom-0 m-4 flex items-end justify-center cursor-pointer">
-          <a
-            type="button"
-            onClick="document.getElementById('nav').scrollIntoView();"
-          >
-            <Image className="w-1" src={down} alt="stack icon" />
-          </a>
-        </div> */}
       </div>
     </article>
   );
