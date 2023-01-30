@@ -10,7 +10,6 @@ body {
 }
 .canvas1,
 .contact,
-.front,
 .project {
   background-image: url(../public/backgrounds/navmobileBG.jpg);
   background-position: center;
@@ -18,38 +17,24 @@ body {
 }
 .front1 {
   background-image: url(../public/projects/1.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .front2 {
   background-image: url(../public/projects/4.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .front3 {
   background-image: url(../public/projects/3.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .front4 {
   background-image: url(../public/projects/2.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .front5 {
   background-image: url(../public/projects/5.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .front5 {
   background-image: url(../public/projects/5.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .front6 {
   background-image: url(../public/projects/6.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .contact,
 .more,
@@ -183,10 +168,12 @@ svg {
   backface-visibility: hidden;
   text-align: center;
   min-height: 250px;
+  background-position: center;
+  background-size: cover;
 }
 .back {
   background: #cedce7;
-  background: linear-gradient(45deg, #2e3192 0, #1bffff 100%);
+  background: linear-gradient(45deg, #4d4e73 0, #808b8b 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -236,10 +223,10 @@ svg {
   justify-content: space-between;
 }
 .project-subtitle {
-  color: #3358ea;
+  color: #0099ff;
   font-weight: 700;
-  text-shadow: 0.2rem 0.2rem 0.4rem #fff;
-  font-size: 1rem;
+  text-shadow: 0.1rem 0.1rem 0.4rem rgb(0, 0, 0);
+  font-size: 1.2rem;
 }
 .container .back {
   -webkit-transform: rotateY(180deg);

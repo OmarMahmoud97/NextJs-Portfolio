@@ -1,9 +1,8 @@
 import Button from "@/components/liquidButton/liquidButton";
-// import Link from "next/link";
 
 function Projects() {
   return (
-    <section className="project flex items-center justify-center xl:justify-start text-white h-screen w-screen">
+    <section className="project flex items-center lg:items-start flex-col justify-center xl:justify-start text-white h-screen w-screen">
       <div className="flex w-9/12 h-screen flex-wrap justify-center items-center overflow-scroll h-4/5">
         <article class="col">
           <div class="container">
@@ -244,6 +243,10 @@ function Projects() {
             </div>
           </div>
         </article>
+      </div>
+      <div className="w-full flex items-center justify-center">
+        {" "}
+        <Button />
       </div>
     </section>
   );
