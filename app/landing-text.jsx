@@ -1,6 +1,10 @@
 "use client";
 import Image from "next/image";
 import javascript from "../public/stack-icons/jsgif.gif";
+import Tailwind from "../public/stack-icons/tailwindcss.svg";
+import Vite from "../public/stack-icons/Vitejs-logo.svg.png";
+import bootstrap from "../public/stack-icons/Bootstrap_logo.svg.png";
+import gsapLogo from "../public/stack-icons/gsap-greensock.svg";
 import react from "../public/stack-icons/reactgif.gif";
 import node from "../public/stack-icons/nodejs.svg";
 import html from "../public/stack-icons/htmlgif.gif";
@@ -8,7 +12,6 @@ import css from "../public/stack-icons/icons8-css3.svg";
 import figma from "../public/stack-icons/figmagif.gif";
 import blender from "../public/stack-icons/icons8-blender-3d.svg";
 import next from "../public/stack-icons/next-js.svg";
-import down from "../public/stack-icons/arrow.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef, useEffect } from "react";
@@ -134,12 +137,15 @@ function LandingText() {
           </p>
         </div>
       </div>
-      <div ref={toolsRef} className="landing-tools w-full absolute">
+      <div
+        ref={toolsRef}
+        className="landing-tools w-full absolute flex flex-col h-full items-center justify-evenly"
+      >
         <h3 className="textshadow mb-8 text-white text-3xl w-full text-center">
           Technologies and Skills
         </h3>
-        <ul className=" w-full justify-center flex-col flex items-center">
-          <div className=" flex items-center w-11/12 justify-evenly ">
+        <ul className="ul w-full justify-evenly flex-col flex items-center h-4/6">
+          <div className="row flex items-center w-11/12 justify-evenly ">
             <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={javascript} alt="stack icon" />
               <li className=" text-white text-base">Javascript</li>
@@ -157,7 +163,7 @@ function LandingText() {
               <li className="text-white text-base">HTML</li>
             </div>
           </div>
-          <div className="flex items-center w-11/12 justify-evenly">
+          <div className="row flex items-center w-11/12 justify-evenly">
             <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={css} alt="stack icon" />
               <li className="text-white text-base">CSS</li>
@@ -173,6 +179,24 @@ function LandingText() {
             <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
               <Image className="w-20" src={next} alt="stack icon" />
               <li className="text-white text-base">Next.js</li>
+            </div>
+          </div>
+          <div className="row flex items-center w-11/12 justify-evenly ">
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={Tailwind} alt="stack icon" />
+              <li className=" text-white text-base">TailwindCSS</li>
+            </div>
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={Vite} alt="stack icon" />
+              <li className="text-white text-base">Vite</li>
+            </div>
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={gsapLogo} alt="stack icon" />
+              <li className="text-white text-base">Greensock</li>
+            </div>
+            <div className=" textshadow w-56 flex flex-col items-center justify-between h-full">
+              <Image className="w-20" src={bootstrap} alt="stack icon" />
+              <li className="text-white text-base">Bootstrap</li>
             </div>
           </div>
         </ul>

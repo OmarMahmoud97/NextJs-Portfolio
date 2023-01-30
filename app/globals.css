@@ -284,3 +284,12 @@ svg {
     background: radial-gradient(circle, #000 0, #103953 35%);
   }
 }
+.landing-button {
+  position: fixed;
+  bottom: 0;
+  margin: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}

@@ -4,7 +4,7 @@ import NavPage from "./navPage";
 export default function Home() {
   return (
     <div>
-      <Animation />
+      <Animation priority />
       <LandingText />
       <NavPage />
       <svg className="svg">
