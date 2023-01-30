@@ -3,7 +3,7 @@ import Button from "@/components/liquidButton/liquidButton";
 function Contact() {
   return (
     <section className="contact overflow-hidden flex-nowrap	 text-gray-500 w-screen h-screen flex items-end justify-center">
-      <div className=" w-2/5 h-screen"></div>
+      <div className="w-2/5 h-screen"></div>
       <div className="lg:w-full h-screen flex flex-col items-center justify-evenly">
         <h1 className=" text-white text-3xl textshadow my-3">Contact</h1>
         <form
