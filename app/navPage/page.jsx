@@ -6,6 +6,7 @@ import Projects from "../../public/nav/projects.gif";
 import Contact from "../../public/nav/mail.gif";
 import Github from "../../public/social-icons/github.png";
 import Linkedin from "../../public/social-icons/linkedin.gif";
+
 import "./nav-anim.css";
 function NavPage() {
   return (
@@ -14,16 +15,14 @@ function NavPage() {
       className="w-full h-screen bg-black z-50 flex align-center justify-center"
     >
       <div className="absolute">
-        <Zoom className="z-50" top delay={400}>
-          <div
-            unoptimized={true}
-            priority
-            alt="background image of animation from a distance"
-            className=" canvas1 bg-black w-screen h-screen relative z-50"
-          ></div>
-        </Zoom>
+        <div
+          unoptimized={true}
+          priority
+          alt="background image of animation from a distance"
+          className=" canvas1 bg-black w-screen h-screen relative z-50"
+        ></div>
       </div>
-      <Zoom top className="flex align-center justify-center " delay={400}>
+      <div top className="flex align-center justify-center " delay={400}>
         <div className="nav-social">
           <a
             className="nav-socials"
@@ -76,7 +75,25 @@ function NavPage() {
             <div className="nav-span">Contact</div>
           </a>
         </div>
-      </Zoom>
+        <svg className="svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="name"
+              />
+              <feColorMatrix
+                in="name"
+                mode="matrix"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -15"
+                result="aab"
+              />
+              <feBlend in="sourceGraphic" in2="aab" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
     </div>
   );
 }

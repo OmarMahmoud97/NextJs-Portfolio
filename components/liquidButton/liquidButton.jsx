@@ -5,7 +5,7 @@ import Link from "next/link";
 function Button() {
   return (
     <>
-      <a href="/#nav" passHref>
+      <a href="/navPage" passHref>
         <div className="button1">
           <Image className="nav-icon1" src={Arrow} alt="projects icon" />
           <div className="blurred1">

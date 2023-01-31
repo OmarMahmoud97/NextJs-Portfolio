@@ -1,12 +1,14 @@
+"use client";
 import LandingText from "@/components/landing-text/landing-text";
 import Animation from "@/components/landing-animation/land-anim";
-import NavPage from "@/components/nav-page/navPage";
+import Enter from "@/components/enter/enter";
+
 export default function Home() {
   return (
     <div>
       <Animation priority />
       <LandingText />
-      <NavPage />
+      <Enter />
       <svg className="svg">
         <defs>
           <filter id="goo">
