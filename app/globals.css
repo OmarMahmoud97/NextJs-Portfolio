@@ -19,6 +19,10 @@ body {
 svg {
   display: none;
 }
+
+.enterPage {
+  background-image: url(../public/animation/300.jpg);
+}
 .canvas1 {
   background-image: url(../public/backgrounds/navmobileBG.jpg);
 }

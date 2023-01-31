@@ -70,7 +70,7 @@ export default function Animation() {
   }
 
   return (
-    <section>
+    <section className="z-0">
       <div
         style={{ height: `${imageTarget}px` }}
         className="hero-image-layer z-0"
