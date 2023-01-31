@@ -6,9 +6,9 @@ import Enter from "@/components/enter/enter";
 export default function Home() {
   return (
     <div>
-      <Animation priority />
-      <LandingText />
-      <Enter />
+      <Animation priority className="z-0" />
+      <LandingText className="z-0" />
+      <Enter className="z-50" />
       <svg className="svg">
         <defs>
           <filter id="goo">

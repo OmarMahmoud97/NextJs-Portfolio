@@ -36,7 +36,7 @@ function LandingText() {
       {
         opacity: 1,
         scrollTrigger: {
-          scrub: 0.2,
+          scrub: 0,
           start: "-5%",
           end: "0.5%",
         },
@@ -53,7 +53,7 @@ function LandingText() {
       {
         opacity: 1,
         scrollTrigger: {
-          scrub: 0.2,
+          scrub: 0,
           start: "-5%",
           end: "0.5%",
         },
