@@ -29,6 +29,7 @@ function NavPage() {
             className="nav-socials"
             alt="top of page button"
             target="_blank"
+            rel="noreferrer"
             href="https://www.linkedin.com/in/omar-mahmoud97/"
           >
             <Image className="nav-social-icon" src={Linkedin} alt="" />
@@ -37,6 +38,7 @@ function NavPage() {
             className="nav-socials"
             alt="top of page button"
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/OmarMahmoud97"
           >
             <Image className="nav-social-icon" src={Github} alt="" />

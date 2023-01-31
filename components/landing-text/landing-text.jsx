@@ -128,7 +128,7 @@ function LandingText() {
             As technology continues to evolve, I am dedicated to creating
             interactive and engaging digital experiences for users. From
             designing and developing websites to building custom applications,
-            my goal is to bring my clients' visions to life.
+            my goal is to bring my clients visions to life.
             <br />
             <br /> I enjoy staying up-to-date with the latest technologies and
             industry trends to ensure that my work is cutting-edge and
