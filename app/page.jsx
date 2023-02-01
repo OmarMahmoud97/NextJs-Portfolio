@@ -2,7 +2,6 @@
 import LandingText from "@/components/landing-text/landing-text";
 import Animation from "@/components/landing-animation/land-anim";
 import Enter from "@/components/enter/enter";
-
 export default function Home() {
   return (
     <div>

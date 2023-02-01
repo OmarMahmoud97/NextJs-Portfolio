@@ -1,5 +1,7 @@
 "use client";
 import "./globals.css";
+import { hotjar } from "react-hotjar";
+import { useEffect } from "react";
 import { Oswald } from "@next/font/google";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -8,6 +10,9 @@ const oswald = Oswald({
   weight: ["400", "700"],
 });
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    hotjar.initialize(3346375, 6);
+  }, []);
   return (
     <html lang="en">
       <head />

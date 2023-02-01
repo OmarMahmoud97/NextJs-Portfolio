@@ -11,7 +11,12 @@ function Contact() {
           className="max-w-3xl flex flex-col w-10/12"
           method="POST"
         >
-          <input type="hidden" name="_gotcha" className="gotcha" />
+          <input
+            type="name"
+            autocomplete="off"
+            name="_gotcha"
+            className="gotcha"
+          />
           <div className="flex items-center justify-between">
             <div className="mx-1 w-6/12 my-2">
               <label
