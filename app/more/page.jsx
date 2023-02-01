@@ -9,7 +9,7 @@ function More() {
         </div>
         <div className="p-2 flex lg:flex-row flex-col-reverse ">
           <div className="lg:w-2/4 flex items-center justify-center">
-            <p className="textshadow h-64 lg:h-80 overflow-scroll md:overflow-visible px-4">
+            <p className="textshadow h-40 lg:h-80 overflow-scroll md:overflow-visible px-4">
               I am a software engineer from London with a background in zoo
               keeping. However, I have recently discovered my true passion in
               technology and have been focusing on developing my skills in this

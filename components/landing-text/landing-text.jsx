@@ -27,7 +27,6 @@ function LandingText() {
     const subfade = subRef.current;
     const toolsfade = toolsRef.current;
     const introfade = introRef.current;
-
     gsap.fromTo(
       namefade,
       {
@@ -200,6 +199,14 @@ function LandingText() {
             </div>
           </div>
         </ul>
+      </div>
+      <div className="absolute bottom-0 left-0 m-4 ">
+        <a
+          href="/navPage"
+          className="flex lg:text-3xl text-opacity-30 text-white"
+        >
+          Skip
+        </a>
       </div>
     </article>
   );
