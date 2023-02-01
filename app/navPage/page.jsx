@@ -14,6 +14,11 @@ function NavPage() {
       id="nav"
       className="w-full h-screen bg-black z-50 flex align-center justify-center"
     >
+      <div className="absolute bottom-0 left-0 m-4 z-index">
+        <a href="/" className=" lg:text-2xl text-opacity-30 text-white z-50">
+          Animation
+        </a>
+      </div>
       <div className="absolute">
         <div
           unoptimized={true}
@@ -75,6 +80,7 @@ function NavPage() {
             <div className="nav-span">Contact</div>
           </a>
         </div>
+
         <svg className="svg">
           <defs>
             <filter id="goo">

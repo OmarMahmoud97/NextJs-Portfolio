@@ -309,3 +309,7 @@ svg {
   justify-content: center;
   cursor: pointer;
 }
+
+.z-index {
+  z-index: 999;
+}
