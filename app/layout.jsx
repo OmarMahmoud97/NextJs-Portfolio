@@ -4,6 +4,7 @@ import { hotjar } from "react-hotjar";
 import { useEffect } from "react";
 import { Oswald } from "@next/font/google";
 import { motion, AnimatePresence } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
             }}
           >
             {children}
+            <Analytics />
           </motion.div>
         </AnimatePresence>
       </body>
