@@ -7,15 +7,21 @@ function Contact() {
       <div className="lg:w-full h-screen flex flex-col items-center justify-evenly">
         <h1 className=" text-white text-3xl textshadow my-3">Contact</h1>
         <form
-          action="https://getform.io/f/e254fb14-ba47-4572-be84-be3a137b3bf4"
+          action="https://formsubmit.co/f34087fc792aad3ea71f1cbc1268a84a"
           className="max-w-3xl flex flex-col w-10/12"
           method="POST"
         >
+          <input type="text" name="_honey" className="name" />
           <input
             type="text"
             autocomplete="off"
             name="_gotcha"
             className="name"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://omar-dev.com/navPage"
           />
           <div className="flex items-center justify-between">
             <div className="mx-1 w-6/12 my-2">
