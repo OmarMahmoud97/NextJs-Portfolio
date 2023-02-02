@@ -4,4 +4,4 @@
 
 ### To bring the designs to life, I utilized Blender for 3D modeling and visual effects.
 
-### The result is a sleek, professional website that truly showcases my abilities and makes a strong first impression for potential clients and employers.
+### The result is a sleek, professional website that truly showcases my abilities.
