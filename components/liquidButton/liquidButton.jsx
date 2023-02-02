@@ -1,7 +1,6 @@
 import Arrow from "../../public/stack-icons/arrow.png";
 import Image from "next/image";
 import "./liquidButton.css";
-import Link from "next/link";
 function Button() {
   return (
     <>
