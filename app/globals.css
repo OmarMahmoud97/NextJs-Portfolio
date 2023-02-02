@@ -36,7 +36,8 @@ svg {
 }
 .canvas1,
 .contact,
-.project {
+.project,
+.thanks {
   background-position: center;
   background-size: cover;
 }
@@ -67,18 +68,8 @@ svg {
 .project {
   background-image: url(../public/backgrounds/projectmobile.jpg);
 }
-.textshadow {
-  text-shadow: 0.3rem 0.3rem 0.4rem #000;
-}
-.enter {
-  text-shadow: 0.5rem 0.5rem 0.4rem #7f7878;
-  border: 0.3rem solid #6e6969;
-  padding: 1rem;
-  border-radius: 1rem;
-  transition: 0.3s ease-in-out;
-}
-.enter:hover {
-  border: 0.4rem solid #fff;
+.thanks {
+  background-image: url(../public/backgrounds/thanks-img-mobile-min.jpg);
 }
 @media (min-width: 1280px) {
   .canvas1 {
@@ -91,12 +82,28 @@ svg {
   }
 }
 @media (min-width: 768px) {
+  .thanks {
+    background-image: url(../public/backgrounds/thanks-img-min.jpg);
+  }
   .project {
     background-image: url(../public/backgrounds/projectbg.jpg);
   }
   .more {
     background-image: url(../public/backgrounds/morebg.jpg);
   }
+}
+.textshadow {
+  text-shadow: 0.3rem 0.3rem 0.4rem #000;
+}
+.enter {
+  text-shadow: 0.5rem 0.5rem 0.4rem #7f7878;
+  border: 0.3rem solid #6e6969;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.enter:hover {
+  border: 0.4rem solid #fff;
 }
 .carousel-video {
   width: 80%;

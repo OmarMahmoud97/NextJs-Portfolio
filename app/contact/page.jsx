@@ -21,7 +21,7 @@ function Contact() {
           <input
             type="hidden"
             name="_next"
-            value="https://omar-dev.com/navPage"
+            value="https://omar-dev.com/thank-you"
           />
           <div className="flex items-center justify-between">
             <div className="mx-1 w-6/12 my-2">
