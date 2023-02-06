@@ -2,12 +2,43 @@
 import LandingText from "@/components/landing-text/landing-text";
 import Animation from "@/components/landing-animation/land-anim";
 import Enter from "@/components/enter/enter";
+import LoadingPage from "../app/loading/page.jsx";
+import { useRef, useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 export default function Home() {
+  const [Loading, SetLoading] = useState(true);
+  const animRef = useRef();
+
+  useEffect(() => {
+    SetLoading(false);
+  }, [animRef]);
+
+  while (Loading) {
+    return <LoadingPage />;
+    console.log("Loading...");
+  }
+
   return (
-    <div>
-      <Animation priority className="z-0" />
-      <LandingText className="z-0" />
-      <Enter className="z-50" />
+    <motion.div
+      initial="initialState"
+      animate="animateState"
+      exit="exitState"
+      transition={{
+        duration: 0.75,
+      }}
+      variants={{
+        initialState: {
+          opacity: 0,
+        },
+        animateState: {
+          opacity: 1,
+        },
+        exitState: {},
+      }}
+    >
+      <Animation ref={animRef} priority className="z-0" />
+      <LandingText ref={animRef} className="z-0" />
+      <Enter ref={animRef} className="z-50" />
       <svg className="svg">
         <defs>
           <filter id="goo">
@@ -26,6 +57,6 @@ export default function Home() {
           </filter>
         </defs>
       </svg>
-    </div>
+    </motion.div>
   );
 }
