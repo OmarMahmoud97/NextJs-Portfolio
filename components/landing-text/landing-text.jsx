@@ -200,12 +200,24 @@ function LandingText() {
           </div>
         </ul>
       </div>
-      <div className="absolute bottom-0 left-0 m-4 ">
+      <div className="absolute bottom-0 left-0 mb-2 flex w-screen items-center justify-evenly">
         <a
-          href="/navPage"
-          className="flex lg:text-3xl text-opacity-30 text-white"
+          href="/projects"
+          className="fast-link flex textshadow lg:text-3xl text-opacity-50 text-white"
         >
-          Skip
+          Projects
+        </a>
+        <a
+          href="/more"
+          className=" fast-link flex textshadow lg:text-3xl text-opacity-50 text-white"
+        >
+          Know me more
+        </a>
+        <a
+          href="/contact"
+          className=" fast-link flex textshadow lg:text-3xl text-opacity-50 text-white"
+        >
+          Contact
         </a>
       </div>
     </article>
