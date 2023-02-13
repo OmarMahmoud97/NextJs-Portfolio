@@ -283,6 +283,13 @@ svg {
   margin: 0 auto;
   bottom: -0.75rem;
 }
+.fast-link {
+  transition: 0.5s ease-in-out;
+}
+.fast-link:hover {
+  color: #cedce7;
+  scale: 1.1;
+}
 @media only screen and (max-width: 1180px) {
   .col {
     margin: 1rem 0.75rem;
