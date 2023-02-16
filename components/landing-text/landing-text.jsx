@@ -22,12 +22,15 @@ function LandingText() {
   const subRef = useRef(null);
   const toolsRef = useRef(null);
   const introRef = useRef(null);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     const namefade = nameRef.current;
     const subfade = subRef.current;
     const toolsfade = toolsRef.current;
     const introfade = introRef.current;
+    const scrollfade = scrollRef.current;
+
     gsap.fromTo(
       namefade,
       {
@@ -59,6 +62,23 @@ function LandingText() {
         },
         onComplete: () => {
           gsap.to(".landing-subname", { opacity: 0 });
+        },
+      }
+    );
+    gsap.fromTo(
+      scrollfade,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 0.4,
+        scrollTrigger: {
+          scrub: 0,
+          start: "-5%",
+          end: "0.5%",
+        },
+        onComplete: () => {
+          gsap.to(".landing-scroll", { opacity: 0 });
         },
       }
     );
@@ -116,8 +136,9 @@ function LandingText() {
           </h2>
           <div className="w-full">
             <Image
+              ref={scrollRef}
               src={scroll}
-              className="w-8 mt-4 opacity-50"
+              className="w-8 mt-4 opacity-50 landing-scroll"
               alt="scroll down for animation"
             />
           </div>
