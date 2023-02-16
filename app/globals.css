@@ -31,9 +31,9 @@ svg {
 .enterPage {
   background-image: url(../public/animation/300.jpg);
 }
-.canvas1 {
+/* .canvas1 {
   background-image: url(../public/backgrounds/navmobileBG.jpg);
-}
+} */
 .canvas1,
 .contact,
 .project,
@@ -72,9 +72,9 @@ svg {
   background-image: url(../public/backgrounds/thanks-img-mobile-min.jpg);
 }
 @media (min-width: 1280px) {
-  .canvas1 {
+  /* .canvas1 {
     background-image: url(../public/backgrounds/navbg.jpg);
-  }
+  } */
 }
 @media (min-width: 1080px) {
   .contact {

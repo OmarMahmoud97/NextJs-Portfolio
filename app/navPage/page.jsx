@@ -12,7 +12,7 @@ function NavPage() {
   return (
     <div
       id="nav"
-      className="w-full h-screen bg-black z-50 flex align-center justify-center"
+      className="navbg w-full h-screen z-50 flex align-center justify-center"
     >
       <div className="absolute bottom-0 left-0 m-4 z-index">
         <a href="/" className=" lg:text-2xl text-opacity-30 text-white z-50">
@@ -24,30 +24,10 @@ function NavPage() {
           unoptimized={true}
           priority
           alt="background image of animation from a distance"
-          className=" canvas1 bg-black w-screen h-screen relative z-50"
+          className=" canvas1 w-screen h-screen relative z-50"
         ></div>
       </div>
-      <div top className="flex align-center justify-center " delay={400}>
-        <div className="nav-social">
-          <a
-            className="nav-socials"
-            alt="top of page button"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/omar-mahmoud97/"
-          >
-            <Image className="nav-social-icon" src={Linkedin} alt="" />
-          </a>
-          <a
-            className="nav-socials"
-            alt="top of page button"
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/OmarMahmoud97"
-          >
-            <Image className="nav-social-icon" src={Github} alt="" />
-          </a>
-        </div>
+      <div className="flex align-center justify-center ">
         <div className="nav-container z-50">
           <a href="/projects" className="nav-label z-50 cursor-pointer">
             <div className="button">
@@ -99,6 +79,26 @@ function NavPage() {
             </filter>
           </defs>
         </svg>
+        <div className="nav-social absolute bottom-20">
+          <a
+            className="nav-socials"
+            alt="top of page button"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/omar-mahmoud97/"
+          >
+            <Image className="nav-social-icon" src={Linkedin} alt="" />
+          </a>
+          <a
+            className="nav-socials"
+            alt="top of page button"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/OmarMahmoud97"
+          >
+            <Image className="nav-social-icon" src={Github} alt="" />
+          </a>
+        </div>
       </div>
     </div>
   );

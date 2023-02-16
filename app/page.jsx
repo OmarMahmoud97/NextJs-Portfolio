@@ -2,6 +2,7 @@
 import LandingText from "@/components/landing-text/landing-text";
 import Animation from "@/components/landing-animation/land-anim";
 import Enter from "@/components/enter/enter";
+import NavPage from "./navPage/page.jsx";
 import LoadingPage from "../app/loading/page.jsx";
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -38,7 +39,8 @@ export default function Home() {
     >
       <Animation ref={animRef} priority className="z-0" />
       <LandingText ref={animRef} className="z-0" />
-      <Enter ref={animRef} className="z-50" />
+      {/* <Enter ref={animRef} className="z-50" /> */}
+      <NavPage ref={animRef} className="z-0" />
       <svg className="svg">
         <defs>
           <filter id="goo">
