@@ -12,6 +12,7 @@ import css from "../../public/stack-icons/icons8-css3.svg";
 import figma from "../../public/stack-icons/figmagif.gif";
 import blender from "../../public/stack-icons/icons8-blender-3d.svg";
 import next from "../../public/stack-icons/next-js.svg";
+import scroll from "../../public/social-icons/arrow-down.gif";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef, useEffect } from "react";
@@ -113,6 +114,13 @@ function LandingText() {
           >
             Software Engineer
           </h2>
+          <div className="w-full">
+            <Image
+              src={scroll}
+              className="w-8 mt-4 opacity-50"
+              alt="scroll down for animation"
+            />
+          </div>
         </div>
         <div className="z-0 flex align-middle justify-center">
           <p
